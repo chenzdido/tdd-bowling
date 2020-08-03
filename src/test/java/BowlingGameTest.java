@@ -23,4 +23,11 @@ public class BowlingGameTest {
         assertEquals(177,score);
     }
 
+    @Test
+    void should_return_socre_when_thenth_frame_first_spare_hit_ten_pin(){
+        BowlingGame bowlingGame=new BowlingGame();
+        int score=bowlingGame.score(new int[]{8, 1, 3, 4,10,5,4,6,4,10,7,3,10,10,6,4,5});
+        assertEquals(165,score);
+    }
+
 }
