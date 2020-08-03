@@ -10,7 +10,7 @@ public class BowlingGameTest {
     }
 
     @Test
-    void should_return_score_when_in_one_frame_is_not_hit_ten_pin(){
+    void should_return_score_when_in_one_frame_except_tenth_is_not_hit_ten_pin(){
         BowlingGame bowlingGame=new BowlingGame();
         int score=bowlingGame.score(new int[]{8, 1, 3, 4,10,5,4,10,10,10,10,10,10,4,5});
         assertEquals(207,score);
